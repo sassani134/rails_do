@@ -18,6 +18,7 @@
 
   <div class="my-5">
     <%= form.label :job_id %>
+
     <%= form.select :job_id, Job.all.map { |job| [job.name, job.id] }, { include_blank: true }, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
