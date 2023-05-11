@@ -23,7 +23,7 @@
 
   <div class="my-5">
     <%= form.label :joueur_id %>
-    <%= form.select :joueur_id, Joueur.all.collect { |joueur| [joueur.name, joueur.id] }, { include_blank: true }, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.select :joueur_id, Joueur.all.collect { |joueur| [joueur.name, joueur.id] }, { include_blank: false },multiple: true, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">

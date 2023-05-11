@@ -46,3 +46,9 @@ rails g model Team name town player_ids:references
 rails g model Match name team1:references team2:references score1:integer score2:integer
 rails g model Round name tournament:references match_ids:references
 rails g model Tournament name round_ids:references
+
+rails g migration AddPlayerToTeam player:references
+rails g migration RemovePlayerFromTeam player:references
+rails g migration join_table_players_teams player:references team:references
+https://i.stack.imgur.com/gH80g.gif
+https://app.genmymodel.com/api/repository/krzysiekk09/TournamentSystemClass

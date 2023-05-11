@@ -1,3 +1,3 @@
 class Equipe < ApplicationRecord
-  belongs_to :joueur
+  has_many :joueurs
 end
